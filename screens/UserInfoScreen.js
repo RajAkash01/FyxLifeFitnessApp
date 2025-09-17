@@ -20,20 +20,20 @@ export default function UserInfoScreen({ navigation }) {
     <SafeAreaView style={styles.container}>
         <StatusBar style="dark" />
       <ScrollView contentContainerStyle={{ padding: 18 ,marginTop:30}}>
-        <Text style={styles.label}>Name</Text>
-        <TextInput style={styles.input} value={name} onChangeText={setName} placeholder="e.g. Akash Raj" />
+        <Text  style={styles.label}>Name</Text>
+        <TextInput placeholderTextColor={'black'}style={styles.input} value={name} onChangeText={setName} placeholder="e.g. Akash Raj" />
 
         <Text style={styles.label}>Age</Text>
-        <TextInput style={styles.input} value={age} onChangeText={setAge} keyboardType="number-pad" placeholder="30" />
+        <TextInput placeholderTextColor={'black'} style={styles.input} value={age} onChangeText={setAge} keyboardType="number-pad" placeholder="30" />
 
         <Text style={styles.label}>Phone</Text>
-        <TextInput style={styles.input} value={phone} maxLength={10} onChangeText={setPhone} keyboardType="phone-pad" placeholder="123-456-7890" />
+        <TextInput placeholderTextColor={'black'} style={styles.input} value={phone} maxLength={10} onChangeText={setPhone} keyboardType="phone-pad" placeholder="123-456-7890" />
 
         <Text style={styles.label}>Gender</Text>
-        <TextInput style={styles.input} value={gender} onChangeText={setGender} placeholder="Male / Female / Other" />
+        <TextInput placeholderTextColor={'black'} style={styles.input} value={gender} onChangeText={setGender} placeholder="Male / Female / Other" />
 
         <Text style={styles.label}>Activity Level</Text>
-        <TextInput style={styles.input} value={activity} onChangeText={setActivity} placeholder="Low / Moderate / High" />
+        <TextInput placeholderTextColor={'black'} style={styles.input} value={activity} onChangeText={setActivity} placeholder="Low / Moderate / High" />
 
         <TouchableOpacity style={styles.saveBtn} onPress={saveProfile} activeOpacity={0.85}>
           <Text style={styles.saveText}>Save & Continue</Text>
