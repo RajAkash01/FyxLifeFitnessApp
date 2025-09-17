@@ -52,7 +52,8 @@ const styles = StyleSheet.create({
     padding: 12,
     borderWidth: 1,
     borderColor: '#eee',
-    marginTop: 8
+    marginTop: 8,
+    color:'black'
   },
   saveBtn: {
     marginTop: 28,
